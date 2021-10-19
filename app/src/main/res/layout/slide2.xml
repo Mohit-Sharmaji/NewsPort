@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-250dp"
+        android:src="@drawable/slide2" />
+
+    <TextView
+        android:id="@+id/Key_Features_Static"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Key-Features"
+        android:textColor="#757575"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        android:fontFamily="serif"
+        android:textSize="40dp"
+        android:layout_above="@+id/featuresList_Static"
+        />
+
+    <TextView
+        android:id="@+id/featuresList_Static"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Key_Features_Static"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="120dp"
+        android:textSize="19dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="• No Personalized Content\n• No Registration\n• No In-App Advertisement\n• Completely Secured &amp; Free"/>
+
+</RelativeLayout>

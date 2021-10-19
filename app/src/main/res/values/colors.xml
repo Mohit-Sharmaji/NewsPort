@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="unFocusedTextColor">#9E9E9E</color>
+    <color name="colorPrimary">#914D76</color>
+    <color name="blue">#448aff</color>
+    <color name="white">#ffffff</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_inactive">#000</color>
+    <!-- dots active colors -->
+    <color name="dot_light_active">#d32f2f</color>
+
+</resources>

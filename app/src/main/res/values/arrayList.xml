@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language">
+        <item>English</item>
+        <item>Arabic</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>Hebrew</item>
+        <item>Italian</item>
+        <item>Dutch</item>
+        <item>Norwegian</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Northern Sami</item>
+        <item>Urdu</item>
+        <item>Chinese</item>
+    </string-array>
+    <string-array name="sortBy">
+        <item>Latest</item>
+        <item>Popularity</item>
+    </string-array>
+    <string-array name="sources">
+        <item>Sorry! Sources Not Available.</item>
+    </string-array>
+</resources>

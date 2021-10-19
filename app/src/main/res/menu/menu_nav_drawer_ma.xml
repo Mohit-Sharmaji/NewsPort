@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <item
+        android:title="Primary" >
+        <menu>
+            <item
+                android:id="@+id/entertainmentNav"
+                android:icon="@drawable/ic_entertainment"
+                android:title="Entertainment"
+                app:showAsAction="always"
+                />
+            <item
+                android:id="@+id/businessNav"
+                android:icon="@drawable/ic_business_24"
+                android:title="Business"
+                app:showAsAction="always"
+                />
+            <item
+                android:id="@+id/healthNav"
+                android:icon="@drawable/ic_baseline_health"
+                android:title="Health"
+                app:showAsAction="always"
+                />
+            <item
+                android:id="@+id/scienceNav"
+                android:icon="@drawable/ic_science_24"
+                android:title="Science"
+                app:showAsAction="always"
+                />
+            <item
+                android:id="@+id/sportsNav"
+                android:icon="@drawable/ic_baseline_sports_baseball_24"
+                android:title="Sports"
+                app:showAsAction="always"
+                />
+            <item
+                android:id="@+id/technologyNav"
+                android:icon="@drawable/ic_baseline_technology"
+                android:title="Technology"
+                app:showAsAction="always"
+                />
+        </menu>
+    </item>
+    <item
+        android:title="Other" >
+        <menu>
+            <item
+                android:id="@+id/settings_menu_navMA"
+                android:title="Settings"
+                android:icon="@drawable/ic_setings_24"
+                app:showAsAction="always"/>
+            <item
+                android:id="@+id/followUs_nav_MA"
+                android:icon="@drawable/ic_followus"
+                android:title="Follow Us"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+
+
+</menu>

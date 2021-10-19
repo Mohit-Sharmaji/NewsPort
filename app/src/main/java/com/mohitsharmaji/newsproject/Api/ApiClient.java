@@ -1,0 +1,19 @@
+package com.mohitsharmaji.newsproject.Api;
+
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+// This class is used to instantiate retrofit Object with baseUrl.
+public class ApiClient {
+    public static final String BASE_URL= "https://newsapi.org/v2/";
+    public static Retrofit retrofit;
+    public static Retrofit getApiClient(){
+        if(retrofit == null){
+            retrofit = new Retrofit.Builder()
+                    .baseUrl(BASE_URL)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+        }
+        return retrofit;
+    }
+}

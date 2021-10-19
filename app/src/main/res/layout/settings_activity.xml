@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Settings"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:background="?attr/colorOnPrimary"
+        android:elevation="2dp"
+        app:titleTextColor="?attr/colorSecondaryVariant"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/toggleDarkMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:layout_below="@id/settingsToolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/settings_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5"
+        android:src="@drawable/settings_img" />
+
+</RelativeLayout>

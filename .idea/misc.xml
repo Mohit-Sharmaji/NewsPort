@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mohit/AndroidStudioProjects/NewsProject/app/src/main/res/layout/activity_main.xml" value="0.18072289156626506" />
+        <entry key="..\:/Users/mohit/AndroidStudioProjects/NewsProject/app/src/main/res/layout/activity_news_detail.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/mohit/AndroidStudioProjects/NewsProject/app/src/main/res/layout/error_internet_not_available.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/mohit/AndroidStudioProjects/NewsProject/app/src/main/res/layout/item.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/mohit/AndroidStudioProjects/NewsProject/app/src/main/res/layout/settings_activity.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/mohit/AndroidStudioProjects/NewsProject/app/src/main/res/layout/slide1.xml" value="0.19610507246376813" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

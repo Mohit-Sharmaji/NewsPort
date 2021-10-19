@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Activities.GettingStarted">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_GettingStarted"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/showWidgets_productKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/layoutDots"
+        app:layout_constraintStart_toStartOf="@+id/viewPager_GettingStarted"
+        app:layout_constraintTop_toTopOf="@+id/viewPager_GettingStarted">
+
+        <EditText
+            android:id="@+id/productKey"
+            android:layout_width="250dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_above="@+id/STATIC_ProductKeyLine"
+            android:layout_marginLeft="40dp"
+            android:textIsSelectable="false"
+            android:background="#0000FFFF"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="?attr/colorPrimary"
+            android:ems="10"
+            android:foregroundTint="?attr/colorPrimary"
+            android:hint="Paste Product Key"
+            android:inputType="text"
+            android:textColor="?attr/colorPrimary"
+            android:textColorHint="#24000000" />
+        <ImageView
+            android:id="@+id/clearProductKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_clear_24"
+            app:tint="@android:color/black"
+            android:alpha=".5"
+            android:layout_toRightOf="@id/productKey"
+            android:layout_alignBottom="@id/productKey"
+            />
+
+        <View
+            android:id="@+id/STATIC_ProductKeyLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/contactDeveloper"
+            android:layout_alignLeft="@id/productKey"
+            android:layout_alignRight="@+id/clearProductKey"
+            android:alpha=".5"
+            android:background="@android:color/black"
+            android:fitsSystemWindows="true"
+            android:isScrollContainer="true" />
+
+        <TextView
+            android:id="@+id/contactDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/letsGoBtn"
+            android:layout_alignLeft="@id/productKey"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="Do You Wanna Contact Developer ?"
+            android:textColor="@color/blue"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/keyAuthError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/productKey"
+            android:layout_alignLeft="@id/productKey"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:textColor="?attr/errorTextColor"
+            android:textSize="12sp"
+            android:text="Error internet not available"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/letsGoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="?attr/errorTextColor"
+            android:elevation="20dp"
+            android:isScrollContainer="true"
+            android:text="Let's Go"
+            android:textColor="#ffffff"
+            app:cornerRadius="10dp" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/progress_bar_slide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#99000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundTint="#ffffff"
+            android:progressTint="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="0dp"
+        android:alpha=".5"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/layoutDots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="10dp"
+        android:foregroundGravity="center|top"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
